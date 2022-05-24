@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    
+</head>
+<body>
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const query = urlParams.get('query')
+        document.write("<p>"+query+"</p>")
+    </script>
+</body>

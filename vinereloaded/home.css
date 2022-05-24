@@ -1,0 +1,14 @@
+.top {
+    background-image: url(ben.webp);
+    background-size: cover;
+}
+input {
+    width: 70%;
+}
+button {
+    background-image: url(ben.webp);
+}
+.searchbutton {
+    width: 1%;
+    height: auto;
+}
