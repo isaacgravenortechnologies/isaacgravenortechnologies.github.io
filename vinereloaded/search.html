@@ -17,6 +17,9 @@
         const urlParams = new URLSearchParams(queryString);
         let query = urlParams.get('query');
         let words = query.split(" ");
+        if(query==null) {
+            words = []
+        }
         console.log(words);
         document.getElementById("search").value = query;
         var videos = ["9+10", "broombroom","doitforthevine","whatarethose", "whyyoualwayslyin"]
