@@ -6,13 +6,7 @@
 
 <br />
 
-# 🧐 Project philosophy
-<style>
-    img {
-        display: inline-block;
-        border-radius: 25px;
-    }
-</style>
+# 🧐 Isaac Gravenor Technologies
 
 > Isaac Gravenor Technologies is a one-man tech hub for all things computers.
 # 📒 Projects
