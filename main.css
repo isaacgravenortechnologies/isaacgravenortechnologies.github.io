@@ -1,0 +1,87 @@
+@font-face {
+font-family: '95font';
+src: url(95font.ttf);
+}
+.coolbutton {
+    height: 24px;
+    margin-top: 0.2%;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.titlebar {
+    font-family: '95font';
+    font-size: 20px;
+    background-color: #0000BF;
+    color: #ffffff;
+    margin-left: -0.3%;
+    width: 100.5%
+}
+body {
+    background-color: #BDBDBD;
+}
+h1 {
+    color: #000000;
+    font-family: '95font';
+}
+p {
+
+    text-decoration: none;
+    color: #000000;
+    font-family: '95font';
+}
+p:link, p:visited,  p:hover, p:active {
+    text-decoration: none;
+    color: #000000;
+    font-family: '95font';
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-family: '95font';
+}
+a:link, a:visited,  a:hover, a:active {
+    text-decoration: none;
+    color: #000000;
+    font-family: '95font';
+}
+.parent {
+    display: table;
+    background-color: #BDBDBD;
+}
+
+.child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #dbdbdb;
+    width: 10%;
+    display:inline-block;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top-color: #585858;
+    border-left-color: #585858;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-style: solid;
+}
+.project {
+    width: 100%;
+
+}
+.project2 {
+    width: 100%;
+    margin-bottom: 53%;
+}
+.brick {
+    border-radius: 25px;
+}
+#horizontal {
+    margin-top: 5px;
+    border-top: 2px solid #585858;
+    position: absolute;
+    margin-left: -0.3%;
+    width: 99.9%
+
+}
