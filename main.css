@@ -70,12 +70,9 @@ a:link, a:visited,  a:hover, a:active {
     width: 100%;
 
 }
-.project2 {
-    width: 100%;
-    margin-bottom: 53%;
-}
 .brick {
-    border-radius: 25px;
+    width: 40%;
+    height: auto;
 }
 #horizontal {
     margin-top: 5px;
