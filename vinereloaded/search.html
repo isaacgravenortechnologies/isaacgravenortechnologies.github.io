@@ -5,8 +5,9 @@
 <body>
     
     <center>
-        <input id="search">
+        <input id="search" class="searchbox">
         <input id="searchbutton" class="searchbutton" type="image" src="search.png" onclick="doSearch()">
+        <a href="mailto:isaac.gravenor@onlinediscoveries.net?subject=New%20Vine%20Video%20Request&body=Video%20ID%20(name%20of%20video%20without%20spaces%20or%20caps)%3A%0AVideo%20Publisher%20Name%20(insert%20name%20here):%20%0AVideo%20MP4%20(Attach%20here):"><img src="./upload.png" class="searchbutton"></img></a>
         <br>
         <div class="video-parent">
             <script src="main.js"></script>
@@ -23,14 +24,30 @@
         console.log(words);
         document.getElementById("search").value = query;
         var videos = ["9+10", "broombroom","doitforthevine","whatarethose", "whyyoualwayslyin"]
-        videos.forEach(function (e) 
+        var authors = ["OG-Reposts", "OG-Reposts","OG-Reposts","OG-Reposts", "OG-Reposts"]
+        videos.forEach(function (e, current) 
         {
-            words.forEach(function (f) {
+            if(words.length < 1) {
+                words.forEach(function (f) {
+                    console.log("words small")
+                    document.write("<div class='item'><video width='320' height='240' controls><source src='videos/"+e+".mp4' type='video/mp4'></video><br><center><b><h4>"+e+"</h5><b><center><br><center><b><h3>"+authors[current]+"</h3><b><center><h5>25th May 2022</h5><br></div>")
+                })
+            }
+            else {
+                words.forEach(function (f, currentw) {
                 if(e.includes(f))
                 {
-                    document.write("<div class='item'><video width='320' height='240' controls><source src='videos/"+e+".mp4' type='video/mp4'></video><br><center><b><h4>"+e+"</h5><b><center><br><center><b><h3>OG-Reposts</h3><b><center><h5>25th May 2022</h5><br></div>")
+                    document.write("<div class='item'><video width='320' height='240' controls><source src='videos/"+e+".mp4' type='video/mp4'></video><br><center><b><h4>"+e+"</h5><b><center><br><center><b><h3>"+authors[current]+"</h3><b><center><h5>25th May 2022</h5><br></div>")
+                    console.log("spliced " + current);
+                    console.log(videos)
+                    words.splice(currentw+1, 1)
+                    
+
                 }
             });
+            }
+            
+            
         });
     </script>
 
