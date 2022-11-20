@@ -8,7 +8,11 @@ src: url(95font.ttf);
     float: right;
     margin-left: 5px;
     margin-right: 5px;
-
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
 }
 .titlebar {
     font-family: '95font';
